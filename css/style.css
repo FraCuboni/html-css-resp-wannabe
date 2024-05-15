@@ -128,9 +128,68 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+ /* TABLET */
  @media screen and (max-width:768px) {
+
     .container{
-        padding: 1rem;
+        padding: 1rem 0;
         width: 100%;
     }
+}
+
+/* MOBILE */
+@media screen and (max-width:320px) {
+
+
+    /* General */
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 2.2rem;
+    }
+
+    p{
+            padding: 1rem 0 2rem 0;
+    }
+
+
+    /* General Classes */
+    .container{
+        padding: 0 1rem;
+        width: 100%;
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+
+    /* Sections and Section-Childs */
+    .lessons .col {
+        width: 100%;
+    }
+
+    .steps{
+            background-color: #eebbc3;
+        }
+        
+    .steps .col {
+        width: 100%;
+    }
+
+    .why-us{
+            background-color: black;
+            padding-top: 3rem;
+    }
+
+    .why-us .col-left {
+        width: 100%;
+    }
+    
+    .why-us .col-right {
+        width: 100%;
+    }
+    
+    .lessons, .steps, .why-us{
+        margin: 0;
+    }
+
 }
